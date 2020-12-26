@@ -1,3 +1,35 @@
+Examples of output:
+    Positive scenario:
+    Moscow departure Monday put into the catalog at a cost = 10000
+    Moscow departure Monday put into the catalog at a cost = 9000
+    Moscow departure Tuesday put into the catalog at a cost = 8000
+    Nizhny Novgorod departure Saturday put into the catalog at a cost = 7000
+    Nizhny Novgorod departure Monday put into the catalog at a cost = 6000
+    Hello! Buyer-agent Client@127.0.0.1:10020/JADE is ready.
+    Target travel is Moscow
+    Trying to order Moscow
+    Found the following seller agents:
+    Provider@127.0.0.1:10020/JADE
+    Moscow ordered from customers Client@127.0.0.1:10020/JADE
+    Moscow successful order from agent Provider@127.0.0.1:10020/JADE
+    Cost = 8000 Day Tuesday
+    Travel-agent Client@127.0.0.1:10020/JADE is stopped.
+    Hello! Buyer-agent Client2@127.0.0.1:10020/JADE is ready.
+    Target travel is Nizhny Novgorod
+    Trying to order Nizhny Novgorod
+    Found the following seller agents:
+    Provider5@127.0.0.1:10020/JADE
+    Nizhny Novgorod ordered from customers Client2@127.0.0.1:10020/JADE
+    Nizhny Novgorod successful order from agent Provider5@127.0.0.1:10020/JADE
+    Cost = 6000 Day Monday
+    Travel-agent Client2@127.0.0.1:10020/JADE is stopped.
+    
+    Negative scenario:
+    Hello! Buyer-agent Client5@127.0.0.1:10020/JADE is ready.
+    There are no specifications for the intended travel
+    Travel-agent Client5@127.0.0.1:10020/JADE is stopped.
+        
+
 package travelagent;
 import com.sun.org.apache.xalan.internal.lib.ExsltStrings;
 import jade.core.Agent;
